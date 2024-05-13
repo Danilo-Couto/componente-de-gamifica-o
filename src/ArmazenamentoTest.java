@@ -52,8 +52,11 @@ public class ArmazenamentoTest {
         User jovem = a.getUserByName("Jovem");
         Integer expected3 = a.GetPointsByTypeAndByUser(jovem, "estrela");
         Integer expected4 = a.GetPointsByTypeAndByUser(jovem, "energia");
-        Assertions.assertEquals(20, expected3);
+        Integer expected5 = a.GetPointsByTypeAndByUser(jovem, "escudo");
+
+        Assertions.assertEquals(10, expected3);
         Assertions.assertEquals(15, expected4);
+        Assertions.assertEquals(5, expected5);
     }
 
     @Test
