@@ -15,9 +15,11 @@ Os conceitos de desenvolvimento de software com Java apresentados neste curso in
 
 Ao final deste curso, você terá amadurecido de tal modo suas habilidades de programação que será capaz de implementar, agora usando o TDD, versões modificadas e estendidas do componente de gamificação constante do Trabalho de Conclusão da Especialização, com base nas boas práticas exercitadas neste curso.
 
-Nível	Intermediário
-Compromisso	32 horas
-Classificação média do usuário 4.7
+Nível: Intermediário
+Compromisso: 32 horas
+Idioma: Português (Brasil)
+Classificação média do usuário: 4.7
+
 
 ## Estrutura do Componente
 
