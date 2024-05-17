@@ -17,11 +17,6 @@ Ao final deste curso, você terá amadurecido de tal modo suas habilidades de pr
 
 Nível	Intermediário
 Compromisso	32 horas
-Idioma	
-Português (Brasil)
-Seja um voluntário para traduzir legendas para este curso
-Como ser aprovado	Seja aprovado em todas as tarefas valendo nota para concluir o curso.
-Classificação do usuário	
 Classificação média do usuário 4.7
 
 ## Estrutura do Componente
