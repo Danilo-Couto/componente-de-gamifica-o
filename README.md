@@ -1,6 +1,28 @@
 # Componente de Gamificação
 
+Projeto final do curso de Orientação a Objetos com Java by Instituto Tecnológico da Aeronáutica
+
 Este repositório contém um componente de gamificação desenvolvido utilizando TDD (Desenvolvimento Orientado por Testes). O componente é capaz de armazenar diferentes tipos de pontos que os usuários podem receber. Abaixo estão as especificações e orientações sobre como o componente foi desenvolvido e como pode ser utilizado.
+
+## Sobre este Curso
+
+Sobre este Curso
+Neste curso, assumimos que você já sabe projetar e desenvolver programas mais complexos em Java, com método e organização graças às boas práticas e princípios exercitados no curso anterior; mas você talvez não se sinta ainda confortável em projetar programas usando técnicas ágeis, como o desenvolvimento guiado por testes (TDD). 
+
+O objetivo deste curso é expor você aos princípios e práticas de desenvolvimento guiado por testes, tanto para modelar quanto para desenvolver aplicações e componentes de software, sem abandonar os conceitos e princípios de orientação a objetos aprendidos no curso anterior. De fato, pregamos que tais conceitos e princípios fortalecem o emprego do TDD no desenvolvimento ágil de software com mais qualidade. Este curso terá um grande foco em atividades hands-on, permitindo a você captar todos os aspectos práticos da técnica e facilitar a sua aplicação quando estiver projetando e desenvolvendo software de maneira ágil nos próximos cursos.
+
+Os conceitos de desenvolvimento de software com Java apresentados neste curso incluem o seguinte: revisão de testes de unidade; automação de testes; desenvolvimento guiado por testes; ciclo do TDD; refatoração de código de produção; ciclo de refatoração; uso de objetos stubs e mocks; boas práticas no TDD; modelagem de software por meio do TDD.
+
+Ao final deste curso, você terá amadurecido de tal modo suas habilidades de programação que será capaz de implementar, agora usando o TDD, versões modificadas e estendidas do componente de gamificação constante do Trabalho de Conclusão da Especialização, com base nas boas práticas exercitadas neste curso.
+
+Nível	Intermediário
+Compromisso	32 horas
+Idioma	
+Português (Brasil)
+Seja um voluntário para traduzir legendas para este curso
+Como ser aprovado	Seja aprovado em todas as tarefas valendo nota para concluir o curso.
+Classificação do usuário	
+Classificação média do usuário 4.7
 
 ## Estrutura do Componente
 
