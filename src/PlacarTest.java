@@ -5,13 +5,12 @@ import org.junit.jupiter.api.Assertions;
 import java.util.List;
 import java.util.Set;
 
-public class ArmazenamentoTest {
-    private ArmazenamentoCSV a;
-    private Placar p = new Placar();
+public class PlacarTest {
+    private final Placar p = new Placar();
 
     @Before
     public void setUp() {
-        a = new ArmazenamentoCSV();
+        ArmazenamentoCSV a = new ArmazenamentoCSV();
         p.setArmazenamento(a);
 
         User guerra = new User("Guerra");
@@ -32,7 +31,7 @@ public class ArmazenamentoTest {
     }
 
     @Test
-    public void testRecuperaUsuario() {
+    public void recuperaUsuario() {
         User user = p.getUserByName("Guerra");
         Assertions.assertEquals("Guerra", user.getName());
     }
@@ -44,7 +43,7 @@ public class ArmazenamentoTest {
     }
 
     @Test
-    public void testRecuperaPontosDeUmTipoDeUmUsuario() {
+    public void recuperaPontosDeUmTipoDeUmUsuario() {
         User guerra = p.getUserByName("Guerra");
         Integer expected1 = p.getPointsByTypeAndByUser(guerra, "estrela");
         Integer expected2 = p.getPointsByTypeAndByUser(guerra, "energia");
@@ -71,8 +70,18 @@ public class ArmazenamentoTest {
 
     @Test
     public void recuperaPontosJaRegistrados() {
-        Set<String> expected = a.getPointsEverStored();
+        Set<String> expected = p.getPointsEverStored();
         Assertions.assertEquals(3, expected.size());
+    }
+
+    @Test
+    public void testGetRanking() {
+        List<User> ranking = p.getRanking("estrela");
+
+        Assertions.assertEquals("Guerra", ranking.get(0).getName());
+        Assertions.assertEquals(20, ranking.get(0).getPointMap().get("estrela"));
+        Assertions.assertEquals("Jovem", ranking.get(1).getName());
+        Assertions.assertEquals(10, ranking.get(1).getPointMap().get("estrela"));
     }
 
 }

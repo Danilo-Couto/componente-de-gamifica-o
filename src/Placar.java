@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.Set;
 
 public class Placar {
     private ArmazenamentoCSV armazenamento;
@@ -10,6 +11,10 @@ public class Placar {
         armazenamento.addUser(user);
     }
 
+    public User getUserByName(String user) {
+        return armazenamento.getUserByName(user);
+    }
+
     public void storePointsByUser(String user, String type, int i) {
         armazenamento.storePointsByUser(user, type, i);
     }
@@ -18,15 +23,19 @@ public class Placar {
         this.armazenamento = a;
     }
 
-    public User getUserByName(String user) {
-        return armazenamento.getUserByName(user);
-    }
-
     public Integer getPointsByTypeAndByUser(User user, String type) {
         return armazenamento.getPointsByTypeAndByUser(user, type);
     }
 
     public List<User> getUsersWithPoints() {
         return armazenamento.getUsersWithPoints();
+    }
+
+    public Set<String> getPointsEverStored() {
+        return armazenamento.getPointsEverStored();
+    }
+
+    public List<User> getRanking(String type) {
+        return armazenamento.getRanking(type);
     }
 }
